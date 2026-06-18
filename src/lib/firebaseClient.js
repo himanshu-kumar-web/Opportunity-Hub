@@ -2,18 +2,19 @@ import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
+  apiKey: "AIzaSyDkNtGgXKtEHauTQrl6jahyXAxph7Dpqjs",
+  authDomain: "opportunityhub-c0bd0.firebaseapp.com",
+  projectId: "opportunityhub-c0bd0",
+  storageBucket: "opportunityhub-c0bd0.firebasestorage.app",
+  messagingSenderId: "304470115420",
+  appId: "1:304470115420:web:1aca19cc027f0a6b499299",
+  measurementId: "G-V6KKFTX30Y"
 };
 
 const isFirebaseConfigured = !!(
-  process.env.NEXT_PUBLIC_FIREBASE_API_KEY &&
-  process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN &&
-  process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID
+  "AIzaSyDkNtGgXKtEHauTQrl6jahyXAxph7Dpqjs" &&
+  "opportunityhub-c0bd0.firebaseapp.com" &&
+  "opportunityhub-c0bd0"
 );
 
 if (!isFirebaseConfigured && typeof window !== 'undefined') {
